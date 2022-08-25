@@ -1,0 +1,36 @@
+{
+  "name": "parser-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "anime": "nodemon ./workers/anime_parser/index.js",
+    "auto": "nodemon ./workers/auto/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "workers/anime_parser/tmp.json",
+      "workers/auto/*.xlsx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomBaytovich/parser_api_server.git"
+  },
+  "author": "Atom Baytovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtomBaytovich/parser_api_server/issues"
+  },
+  "homepage": "https://github.com/AtomBaytovich/parser_api_server#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "node-html-parser": "^5.4.2-0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
